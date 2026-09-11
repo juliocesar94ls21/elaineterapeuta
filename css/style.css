@@ -831,3 +831,65 @@ a {
 .p-msg-footer{
   margin-top: 2em !important;
 }
+.col-img-el{
+  background-image: url("../img/eliane-poster.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  max-height: 100% !important;
+}
+.col-poster-bc{
+  background-image: url("../img/poster-form-edt.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  max-height: 100% !important;
+}
+.container-whats{
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+}
+.container-whats i{
+  color: #fff;
+  background-color: #1A4231;
+  font-size: 40px;
+  padding: 7px 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.container-whats::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #1A4231;
+    border-radius: 50%;
+
+    z-index: -1;
+
+    animation: whats-pulse 1s infinite;
+}
+
+/* Animação */
+@keyframes whats-pulse {
+
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
